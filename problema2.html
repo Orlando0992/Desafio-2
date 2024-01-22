@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Problema 2</li>
+                <li><a href="problema3.html"> Problema 3</a></li>
+            </ol>
+        </div>
+    </header>
+
+    <h1>Desafio 2 - Condicionales</h1>
+
+    <p>
+        Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+        disponibles. Para eso deberá existir un input debajo de cada imagen donde el
+        usuario podrá ingresar un número. En caso de que la suma de todos los stickers
+        seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la cantidad de
+        stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un
+        texto que dice "Llevas demasiados stickers". (Total: 4 puntos)
+    </p>
+
+    <p>
+        A. El párrafo muestra la cantidad de stickers seleccionados (2 puntos)
+        B. El párrafo muestra que lleva demasiados stickers en caso de que la cantidad
+        sea mayor que 10. (2 puntos)
+    </p>
+
+    <h4>Elige tu cantidad de entradas</h4>
+
+    <div class="container_peliculas">
+        <div class="container_imagen">
+            <img class="pelicula" src="assets/img/La_tortuga_roja.webp" alt="Tortuga_roja">
+            <input type="text" placeholder="Ingrese cantidad" id="pelicula1">
+        </div>
+
+        <div class="container_imagen">
+            <img class="pelicula" src="assets/img/Viaje_Chihiro.webp" alt="Viaje_chihiro">
+            <input type="text" placeholder="Ingrese cantidad" id="pelicula2">
+        </div>
+
+        <div class="container_imagen">
+            <img class="pelicula" src="assets/img/Ponyo.jpg" alt="Ponyo">
+            <input type="text" placeholder="Ingrese cantidad" id="pelicula3">
+        </div>
+    </div>
+
+    <div class="verificador">
+        <input type="button" name="button" value="verificar ticket" id="verificador">
+    </div>
+
+    <p class="alerta" id="alerta-cantidad"></p>
+
+    <script src="assets/js/app.js"></script>
+    
+</body>
+</html>

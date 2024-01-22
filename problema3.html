@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="problema2.html">Problema 2</a></li>
+                <li>Problema 3</></li>
+            </ol>
+        </div>
+    </header>
+
+    <h1>Desafio 3 - Condicionales</h1>
+
+    <p>
+        Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer
+        click a la opción ingresar se debe verificar que el password sea 911 y en ese caso
+        mostrar debajo del botón ingresar, un párrafo con el contenido "password 1
+        correcto", en caso de que el password sea 714 se debe mostrar en el párrafo
+        "password 2 es correcto", si ingresa otro valor se debe mostrar "password
+        incorrecto". (Total: 4 puntos)
+    </p>
+
+    <p>
+        A. Se muestra correctamente el párrafo "password 1 correcto" al ingresar el
+        password 911 utilizando los select y luego presionando botón con el texto
+        ingresar. (1 punto)
+        B. Adicionalmente se muestra correctamente el párrafo "password 2 correcto" al
+        ingresar el password 714 utilizando los select y luego presionando botón con el
+        texto ingresar. (2 puntos)
+        C. Se muestra password incorrecto al seleccionar cualquier otro password (1
+        punto).
+    </p>
+
+    <h2>Ingrese password</h2>
+    <div class="container1">
+        <div class="contenedor-principal">
+            <div class="caja-item">
+                <select id="selector-1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            
+            <div class="caja-item">
+                <select id="selector-2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+    
+            <div class="caja-item">
+                <select id="selector-3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="contenedor_password">
+            <br>
+            <input type="button" name="button" id="btn-password" value="Verificar">
+            <br>
+            <br>
+            <p class="alerta" id="alerta-password"></p>
+        </div>
+
+    </div>
+
+    
+
+    <script src="assets/js/app.js"></script>
+    
+</body>
+</html>
